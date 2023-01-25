@@ -19,3 +19,7 @@ function containsNumbers(text){
   }
   return false;
 }
+
+exports.sum = sum;
+exports.div = div;
+exports.containsNumbers = containsNumbers;
