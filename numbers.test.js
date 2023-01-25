@@ -17,3 +17,33 @@ test('Testing div -- success', () => {
     const result = myFunctions.div(0, 7);
     expect(target).toBe(result);
     });
+
+test('Testing containsNumbers -- success', () => {
+    const target = true;
+    const result = myFunctions.containsNumbers("123456");
+    expect(target).toBe(result);
+    });
+
+test('Testing containsNumbers -- success', () => {
+    const target = true;
+    const result = myFunctions.containsNumbers("abc456");
+    expect(target).toBe(result);
+    });
+
+test('Testing containsNumbers -- success', () => {
+    const target = false;
+    const result = myFunctions.containsNumbers("abcdef");
+    expect(target).toBe(result);
+    });
+
+test('Testing containsNumbers -- success', () => {
+    const target = false;
+    const result = myFunctions.containsNumbers("@#$%^");
+    expect(target).toBe(result);
+    });
+
+test('Testing containsNumbers -- success', () => {
+    const target = false;
+    const result = myFunctions.containsNumbers(" ");
+    expect(target).toBe(result);
+    });
