@@ -6,8 +6,6 @@ test('Testing sum -- success', () => {
   expect(target).toBe(result);
 });
 
-const myFunctions = require('./numbers.js');
-
 test('Testing div -- success', () => {
     const target = 6;
     const result = myFunctions.div(12, 2);
